@@ -18,10 +18,13 @@
     
   }
  .menu-list li{
+ 
+  
   display: inline-flex;
   overflow: hidden;
   list-style-type: none;
   padding: 14px 16px;
+  margin-top: 15px;
 
   
   
@@ -52,24 +55,26 @@
   display:block;
   float: left;
   max-height: 148px;
-  margin-left: 100px;
+  margin-left: 50px;
 }
 
-@media screen and (min-width:1219px) {
+@media screen and (min-width:1019px) {
   .menu-toggle i{
     display: none;
   }
 }
 
-@media screen and (max-width:1218px) {
+@media screen and (max-width:1020px) {
   .menu-list{
     display: none;
   }
 .logo{
+  position: absolute;
   display: flex;
  margin-left: auto;
 min-width: 26%;
 min-height: 148px;
+
 }
   
   .menu-toggle{
@@ -81,12 +86,15 @@ min-height: 148px;
     background-color: #44a153;
     display: flex;
     flex-direction: column-reverse;
-    
+    margin-top: 148px;
+    border-radius: 3px;
+    border-color: brown;
   }
 
  
-
+.menu-toggle.open{
+  margin-right: -185px;
+  margin-top: -2px;
+  
 }
-.menu-toggle:hover{
-  background-color: #349143;
 }
